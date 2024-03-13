@@ -2,8 +2,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Slab&family=Pacifico&family=Poppins:ital,wght@0,400;1,300&display=swap')
 
+    
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
+    html {
+        scroll-behavior: smooth;
+      }
 
+       h2 {
+            padding-top: 3em:
+       }
 
   
   /* Hide the links inside the navigation menu (except for logo/home) */
@@ -22,7 +34,7 @@
   
   /* Style the hamburger menu */
   .topnav a.icon {
-    background:#F1F1EF;
+    
     display: block;
     position: absolute;
     right: 0;
@@ -30,20 +42,20 @@
   }
   
   .topnav a:hover {
-    background-color: #e6e663;
-    color: black;
+    
   }
   
   /* Style the active link (or home/logo) */
   .active {
-    background-color: #F1F1EF;
-    color: rgb(0, 0, 0);
+    background-color: #eaefbd;
+    color: #f7ce5b;
     font-family: "Lobster", sans-serif;
     font-style: normal;
     font-size: 2em;
     padding-left: 1em;
     height: 2em;
     padding-top: 0.5em;
+    border-bottom: 2px solid #ffc300;
     
   }
 
@@ -54,4 +66,42 @@
     font-family: "Angkor", serif;
     font-weight: 400;
     font-style: normal;
+  }
+
+  .menu-img-items {
+    width: 200px;
+    height: auto;
+    padding-left: 1em; 
+    border-radius: 10px;
+  }
+
+  .fork-spoon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em ;
+    
+  }
+
+  .logo-intro {
+    float: left;
+  }
+
+  .food-menu p {
+    font-size: 15px;
+    color: grey;
+    font-weight: 600;
+    padding-left: 1em;
+  }
+
+  .food-menu h2 {
+    padding-left: 1em;
+    padding-top: 1em;
+  }
+
+  .front-img {
+    height: 300px; 
+    width: 100%; 
+    overflow: hidden;
+    object-fit: cover;
   }
