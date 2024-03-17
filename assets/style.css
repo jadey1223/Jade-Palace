@@ -2,21 +2,35 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Slab&family=Pacifico&family=Poppins:ital,wght@0,400;1,300&display=swap')
 
-    
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+// Variable overrides first
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
 
-    html {
-        scroll-behavior: smooth;
-      }
+// Then import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap"; 
+// Functions first
+@import "../node_modules/bootstrap/scss/functions";
 
-       h2 {
-            padding-top: 3em:
-       }
+// Variable overrides second
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
 
+// Required Bootstrap imports
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// Optional components
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities/api";
   
   /* Hide the links inside the navigation menu (except for logo/home) */
   .topnav #myLinks {
@@ -41,10 +55,7 @@
     top: 3px;
   }
   
-  .topnav a:hover {
-    
-  }
-  
+ 
   /* Style the active link (or home/logo) */
   .active {
     background-color: #eaefbd;
@@ -64,8 +75,9 @@
     display: flex;
     justify-content: center;
     font-family: "Angkor", serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
+   
   }
 
   .menu-img-items {
@@ -100,7 +112,7 @@
   }
 
   .front-img {
-    height: 300px; 
+    height: 250px; 
     width: 100%; 
     overflow: hidden;
     object-fit: cover;
