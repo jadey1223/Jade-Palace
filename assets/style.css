@@ -1,41 +1,64 @@
 
+  /* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Slab&family=Pacifico&family=Poppins:ital,wght@0,400;1,300&display=swap')
-  
-  /* Style navigation menu links */
-  .topnav {
-    color: rgb(0, 0, 0);
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #fff9f9;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+  font-family: "Rowdies", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
-  
+}
  
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 3px;
-  }
-
-
-  
- 
-  /* Style the active link (or home/logo) */
-  .active {
-    background-color: hsl(199, 92%, 86%);
-    color: rgba(0, 0, 0, 0.733);
-    font-family: "Shadows Into Light", cursive;
-    font-weight: 700;
-    font-size: 3em;
-    padding-left: 1em;
-    height: 2em;
-    padding-top: 0.5em;
-  }
-
   .menu-section {
     padding-top: 1em;
     display: flex;
@@ -88,8 +111,8 @@
 
   .row  {
      border-radius: 10px;
-    box-shadow: 5px 12px 0.5px 0.5px #edffc6;
-    background-color: #c8e48c;
+    box-shadow: 5px 5px 0.5px 0.5px #f5f8ef;
+    background-color: #edf9d3;
     margin: 2em;
     max-width: 900px;
    
@@ -106,4 +129,31 @@
     font-family: "Indie Flower", cursive;
     font-size: 1.5em;
     font-style: normal;
+  }
+
+  .title {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(184, 244, 120);
+    margin: 0.5rem;
+  }
+
+  .heading-sct {
+    display: flex;
+    gap: 0rem; 
+    background: #00000080;
+    border-bottom: solid 5px white;
+  }
+
+  .logo {
+    object-fit:scale-down;
+    margin: 0.5rem;
+  
+  }
+
+  .hamburger-icn {
+     font-size:30px;
+     cursor:pointer;
+     color:rgb(255, 255, 255);
   }

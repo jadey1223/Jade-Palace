@@ -12,36 +12,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <a href="https://www.flaticon.com/free-icons/restaurant" title="restaurant icons"></a>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="/assets/run.js"></script>
-
+    <script src="/assets/js/run.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Indie+Flower&family=Nunito&family=Roboto+Condensed&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Angkor&family=Lobster&family=Oswald:wght@200..700&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--Navbar-->
-          <div class="topnav">
-            <h1 class="active">Jade Palace</h1> 
-            <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
-              <a href="#index">Menu</a>
-              <a href="#booking">Booking</a>
-              <a href="#contact">Contact</a>
-            </div>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
+    <!-- The overlay -->
+  <div id="myNav" class="overlay">
 
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="#index.html">Menu</a>
+    <a href="#booking.html">Bookings</a>
+    <a href="#contact.html">Contact</a>
+  </div>
+</div>
+
+   
+    <div class="heading-sct">
+    <img src="/assets/images/palace.png" class="logo">
+    <h1 class="title">Jade Palace</h1>  
+    <span class="hamburger-icn"   onclick="openNav()">&#9776;</span>
+</div> 
           <!--Menu items-->
     <section class="food-menu">
-       <!-- <img src="/assets/images/curry-spices.jpg" class="front-img"> -->
+       <!-- <img src="/assets/images/curry-spices.jpg" class="front-img">
         <div class="above-txt">
             <h1 class="menu-section">Menu</h1>
             <img src="/assets/images/fork.png" class="fork-spoon">
-        </div>
+        </div> -->
 
     <div class="row g-0">
         <div class="col-md-4">
