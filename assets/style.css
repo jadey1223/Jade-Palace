@@ -1,3 +1,6 @@
+body {
+  background-color: rgba(219, 236, 215, 0.489);
+}
 
   /* The Overlay (background) */
 .overlay {
@@ -8,8 +11,8 @@
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
-  background-color: rgb(0,0,0); /* Black fallback color */
-  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  background-color: rgb(176, 245, 133); /* Black fallback color */
+  background-color: rgba(88, 102, 91, 0.9); /* Black w/opacity */
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -29,6 +32,7 @@
   text-decoration: none;
   font-size: 36px;
   color: #fff9f9;
+  text-decoration: underline;
   display: block; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color) */
   font-family: "Rowdies", sans-serif;
@@ -75,7 +79,8 @@
     padding-left: 1em; 
     padding-top: 1em;
     margin-bottom: 1em;
-    border-radius: 10px;
+    border-radius: 25% 10%;
+   
   }
 
   .fork-spoon {
@@ -111,12 +116,9 @@
 
   .row  {
      border-radius: 10px;
-    box-shadow: 5px 5px 0.5px 0.5px #f5f8ef;
-    background-color: #edf9d3;
+   
     margin: 2em;
     max-width: 900px;
-   
-   
   }
 
   .row p {
@@ -124,9 +126,9 @@
   }
 
   .row h5 {
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
-    font-family: "Indie Flower", cursive;
+    font-family: "Hind Madurai", sans-serif;
     font-size: 1.5em;
     font-style: normal;
   }
@@ -135,16 +137,10 @@
     font-family: "Rowdies", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: rgb(184, 244, 120);
+    color: rgb(73, 103, 69);
     margin: 0.5rem;
   }
 
-  .heading-sct {
-    display: flex;
-    gap: 0rem; 
-    background: #00000080;
-    border-bottom: solid 5px white;
-  }
 
   .logo {
     object-fit:scale-down;
@@ -153,7 +149,55 @@
   }
 
   .hamburger-icn {
-     font-size:30px;
+     font-size: 2.5rem;
+     float:right;
      cursor:pointer;
-     color:rgb(255, 255, 255);
+     color:rgb(56, 68, 59);
+     position: relative;
+     bottom: 3.8rem;
+     right: 2rem;
   }
+
+  h1 {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: "Hind Madurai", sans-serif;
+    font-size: 1.5em;
+    font-style: normal;
+    margin-left: 2rem;
+  }
+
+  .form-select {
+    max-width: 23rem;
+    border: white;
+    margin: 3.5rem;
+  }
+
+
+
+  .email-input {
+    margin: 1rem;
+    margin-left: 2rem;
+  }
+
+  
+  .form-options {
+    margin: 1rem;
+  }
+
+  .comment-sct {
+    margin: 1rem;
+    margin-left: 2rem;
+  }
+
+  .date-input {
+    margin: 1rem;
+    border: white;
+    padding: 0.5rem;
+    margin-left: 2rem;
+  }
+  
+  .form-options {
+    margin-left: 2rem;
+  }
+  
