@@ -159,7 +159,7 @@ body {
   }
 
   h1 {
-    color: rgb(0, 0, 0);
+    color: rgb(29, 50, 21);
     font-weight: bold;
     font-family: "Hind Madurai", sans-serif;
     font-size: 1.5em;
@@ -199,5 +199,14 @@ body {
   
   .form-options {
     margin-left: 2rem;
+  }
+
+  .btn-primary {
+    margin: 1rem;
+    margin-left: 2rem;
+  }
+
+  .booking-title {
+    margin-top: 3rem;
   }
   

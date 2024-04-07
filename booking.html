@@ -22,8 +22,6 @@
 </head>
 <body>
     
-   
-
    <!-- The overlay -->
    <div id="myNav" class="overlay">
 
@@ -38,41 +36,31 @@
     </div>
   </div>
   
-     
       <div class="heading-sct">
     
       <h1 class="title">Jade Palace</h1>  
       <span class="hamburger-icn"   onclick="openNav()">&#9776;</span>
   </div> 
 
- <h1> Bookings</h1>
+ <h1 class="booking-title"> Bookings</h1>
 
-<form>
+<form action="/process-form.php" method="post">
     <div class="">
         <div class="contact-details">
-          <input type="text" class="form-options" placeholder="First Name" aria-label="First Name">
+          <input type="text" class="form-options" placeholder="First Name" aria-label="First Name" name="First Name">
         </div>
         <div class="lastn">
-          <input type="text" class="form-options" placeholder="Last Name" aria-label="Last Name">
+          <input type="text" class="form-options" placeholder="Last Name" aria-label="Last Name" name="Last Name">
         </div>
       </div>
-       <h1>People</h1>
-          <select class="form-options" aria-label="Default select example">
        
-        <option value="1">1 person</option>
-        <option value="2">2 perons</option>
-        <option value="3">3 persons</option>
-        <option value="3">4 person</option>
-        <option value="3">5 persons</option>
-        <option value="3">6 persons</option>
-      </select>
    
       <br> 
    <h1>Date</h1>
-    <input type="date" class="date-input">
+    <input type="date" class="date-input" name="date">
 
     <h1>Time</h1>
-    <select class="form-options" aria-label="Default select example">
+    <select class="form-options" aria-label="Default select example" name="time">
  
   <option value="1">15:00</option>
   <option value="2">16:00</option>
@@ -81,24 +69,36 @@
   <option value="3">19:00</option>
   <option value="3">20:00</option>
 </select>
-      
+
+   <h1>People</h1>
+          <select class="form-options" aria-label="Default select example" name="people">
+       
+        <option value="1">1 person</option>
+        <option value="2">2 perons</option>
+        <option value="3">3 persons</option>
+        <option value="3">4 person</option>
+        <option value="3">5 persons</option>
+        <option value="3">6 persons</option>
+      </select>   
     <div class="contact-details">
       <h1>Email</h1>
         <div class="email-input">
-          <input type="email" class="form options" placeholder="john.doe@gmail.com" aria-label="email">
+          <input type="email" class="form options" placeholder="john.doe@gmail.com" aria-label="email" name="email">
         </div>
         <div class="number-input">
           <h1>Phone number</h1>
-          <input type="text" class="form-options" placeholder="+44 010101023" aria-label="Phone number">
+          <input type="text" class="form-options" placeholder="+44 010101023" aria-label="Phone number" name="number">
         </div>
       </div>
 
-      <textarea name="message" rows="10" cols="30" class="comment-sct">
-        Comments...
-        </textarea>
+      <textarea name="message" rows="10" cols="40" class="comment-sct">
+        Additional inquiries
+      </textarea>
+
+    <button class="btn-primary" type="submit">Submit form</button>
+    </form>
 
     
-</form>
-    
+
 </body>
 </html>
