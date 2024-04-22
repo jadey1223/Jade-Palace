@@ -44,7 +44,9 @@
 
  <h1 class="booking-title"> Bookings</h1>
 
-<form action="process-form.php" method="POST">
+<!--FORM-->
+
+<form action="/includes/dbh.inc.php" method="post" name="form">
     <div class="">
         <div class="contact-details">
           <input type="text" class="form-options" placeholder="First Name" aria-label="firstName" name="firstName">
@@ -83,7 +85,7 @@
     <div class="contact-details">
       <h1>Email</h1>
         <div class="email-input">
-          <input type="email" class="form options" placeholder="john.doe@gmail.com" aria-label="email" name="email">
+          <input type="E-mail" class="form options" placeholder="john.doe@gmail.com" aria-label="email" name="email">
         </div>
         <div class="number-input">
           <h1>Phone number</h1>
