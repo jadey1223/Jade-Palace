@@ -1,15 +1,13 @@
-
-  "scripts": {
-    "start": "webpack serve",
-    "build": "webpack build --mode=production",
-    "test": "echo \"Error: no test specified\" && exit 1"
-
+{
   "name": "my-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve",
+    "build": "webpack build --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -23,12 +21,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3"
-  },
-  "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
   }
 }
-
 
   
