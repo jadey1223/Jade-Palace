@@ -1,3 +1,12 @@
+
+// Correct
+import authgear from "@authgear/web";
+
+// Use authgear in your code
+authgear.configure({ /* ... */ });
+
+
+
 let authgearClient = null;
 
 const fetchAuthConfig = () => fetch("/authgear_config.json");
@@ -74,22 +83,21 @@ const updateUI = async () => {
 
 import authgear from "@authgear/web";
 
-authgear
-  .configure({
-    // custom domain endpoint or default endpoint
-    // default domain should be something like: https://<yourapp>.authgear.cloud
-    endpoint: "<your_app_endpoint>",
-    // Client ID of your application
-    clientID: "<your_client_id>",
-    // sessionType can be "refresh_token" or "cookie", default "refresh_token"
-    sessionType: "refresh_token",
-  })
-  .then(
-    () => {
-      // configure successfully.
-    },
-    (err) => {
-      // failed to configure.
-    }
-  );
+authgear.configure({
+  // Your Authgear Client ID
+  clientID: "5c015605271bda72",
+  // Your Authgear endpoint
+  endpoint: "https://print-winner-643.authgear.cloud"
+});
+// Check if the user is authenticated when the page loads
+authgear.fetchUserInfo().then(userInfo => {
+  if (userInfo) {
+    // The user is authenticated
+    // You can update the UI accordingly
+  } else {
+    // The user is not authenticated
+    // You can redirect the user to the login page
+    authgear.startAuthorization();
+  }
+});
   
