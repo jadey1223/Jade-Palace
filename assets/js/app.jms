@@ -71,3 +71,25 @@ const updateUI = async () => {
     document.getElementById("btn-logout").disabled = !isAuthenticated;
     document.getElementById("btn-login").disabled = isAuthenticated;
 };
+
+import authgear from "@authgear/web";
+
+authgear
+  .configure({
+    // custom domain endpoint or default endpoint
+    // default domain should be something like: https://<yourapp>.authgear.cloud
+    endpoint: "<your_app_endpoint>",
+    // Client ID of your application
+    clientID: "<your_client_id>",
+    // sessionType can be "refresh_token" or "cookie", default "refresh_token"
+    sessionType: "refresh_token",
+  })
+  .then(
+    () => {
+      // configure successfully.
+    },
+    (err) => {
+      // failed to configure.
+    }
+  );
+  
