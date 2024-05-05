@@ -1,4 +1,4 @@
-{
+
   "scripts": {
     "start": "webpack serve",
     "build": "webpack build --mode=production",
@@ -23,6 +23,10 @@
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   }
 }
 
