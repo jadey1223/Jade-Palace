@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Bebas+Neue&family=Hind+Madurai:wght@300;400;500;600;700&family=Lobster&family=Oswald:wght@200..700&family=Rowdies:wght@300;400;700&display=swap');
+
 body {
   background-color: #eeede9 !important;
 }
@@ -134,11 +136,14 @@ body {
   }
 
   .title {
-    font-family: "Rowdies", sans-serif;
-    font-weight: 400;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
     font-style: normal;
     color: rgb(73, 103, 69);
-    margin: 0.5rem;
+    font-size: 40px;
+    position: relative;
+    top: 4.5px;
+    
   }
 
 
@@ -149,13 +154,13 @@ body {
   }
 
   .hamburger-icn {
-     font-size: 2.5rem;
+     font-size: 2.8rem;
      float:right;
      cursor:pointer;
      color:rgb(56, 68, 59);
      position: relative;
-     bottom: 3.8rem;
-     right: 2rem;
+     bottom: 4.3rem;
+     right: 1.3rem;
   }
 
   h1 {
@@ -212,4 +217,10 @@ body {
   
   .heading-sct{
     background-color: rgb(255, 255, 255);
+    padding: 10px;
+    
+    background-color: #ffffff;
+    position: relative;
+    box-shadow: -5px 11px 71px 15px #caf5cd;
+
   }
