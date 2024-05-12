@@ -1,19 +1,19 @@
 {
   "dependencies": {
     "@authgear/web": "2.9.0",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "jsonwebtoken": "^9.0.2",
-    "package": "^1.0.1",
-    "prompt-sync": "^4.2.0",
-    "ts-node": "^10.9.2",
     "connect-mongo": "^4.5.0",
+    "dotenv": "^16.4.5",
     "ejs": "^3.1.6",
+    "express": "^4.19.2",
     "express-session": "^1.17.2",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^5.13.8",
-    "passport": "^0.4.1",
+    "package": "^1.0.1",
+    "passport": "^0.7.0",
     "passport-google-oauth2": "^0.2.0",
-    "passport-google-oauth20": "^2.0.0"
+    "passport-google-oauth20": "^2.0.0",
+    "prompt-sync": "^4.2.0",
+    "ts-node": "^10.9.2"
   },
   "name": "jade-palace",
   "description": "![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)",
