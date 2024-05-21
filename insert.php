@@ -37,7 +37,10 @@ if(isset($_POST['submit']))
     // Prepare and bind
     $stmt = $conn->prepare("INSERT INTO info (firstn, lastn, date, email, time, people, phonen, comments) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("sssssiis", $firstn, $lastn, $date, $email, $time, $people, $phonen, $comments);
-    
+
+    // redirect to home-page
+    header('Location:  https://jadey1223.github.io/Jade-Palace/');
+exit;
     // Execute and check
     if ($stmt->execute()) {
         echo "Data inserted successfully!";
@@ -51,5 +54,3 @@ if(isset($_POST['submit']))
 
 // Close the connection
 $conn->close();
-
-?>
