@@ -240,6 +240,7 @@ body {
     padding: 1.8rem;
     background-color: #fff9f9;
     max-width: 60pc;
+    max-height: 300px;
     width:100%;
   } 
   
@@ -273,3 +274,39 @@ body {
     border-radius: 20px !important;
     
   }
+
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Ratio for 16:9 aspect ratio */
+    position: relative;
+    height: 0;
+}
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 500px;
+    width: 600px;
+    position: absolute;
+    padding-left: 2rem;
+    border-radius: 8px;
+}
+
+.location,
+.contact,
+.email {
+  display: flex;
+  padding: 1rem;
+}
+
+.address,
+.phonenumber,
+.email-address{
+  padding-left: 2rem;
+}
+
+.contact-us {
+  background-color: #e7f5ac;
+  max-width: 700px;
+  margin: 2rem;
+  border-radius: 8px;
+}
