@@ -39,8 +39,8 @@ if(isset($_POST['submit']))
     $stmt->bind_param("sssssiis", $firstn, $lastn, $date, $email, $time, $people, $phonen, $comments);
 
     // redirect to home-page
-    header('Location:  https://jadey1223.github.io/Jade-Palace/');
-exit;
+    header('Location: https://8grnqxj3-3000.uks1.devtunnels.ms/#index.html');
+
     // Execute and check
     if ($stmt->execute()) {
         echo "Data inserted successfully!";
