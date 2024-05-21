@@ -1,30 +1,43 @@
 <?php
-function OpenCon()
-{
-$dbhost = "localhost";
-$dbuser = "root";
-// $dbpass = "1234";
-$dbname = "mysql";
-$conn = new mysqli($dbhost, $dbuser,$dbname) or die("Connect failed: %s\n". $conn -> error);
-return $conn;
-}
-function CloseCon($conn)
-{
-  $sql = "INSERT INTO bookingdb (firstn, lastn, email, date,time,people,email,phonen,comments)
-VALUES ('Jade', 'Fleck', 'jade@example.com') ,";
+    
+if(isset($_POST['submit']))
+    {
+        $firstn = $_POST['firstn'];
+        $lastn= $_POST['lastn'];
+        $date = $_POST['date'];
+        $email = $_POST['email'];
+        $time = $_POST['time'];
+        $people = $_POST['people'];
+        $phonen= $_POST['phonen'];
+        $comments= $_POST['comments'];
+    }
 
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
+    $host = "127.0.0.1";
+    $username = "root";
+    $password = "";
+    $dbname = "mysql";
+   
+    // creating a connection
+    $con = mysqli_connect($host, $username, $password, $dbname);
+    
+    // to ensure that the connection is made
+    if (!$con)
+    {
+        die("Connection failed!" . mysqli_connect_error());
+    }
 
-$conn->close();
-$conn -> close();
-}
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-if (isset($_POST['submit'])) {
-  $sql = "INSERT INTO bookingdb (firstn, lastn, date, time, people, email, phonen, comments) VALUES ('$_POST[firstn]', '$_POST[lastn]', '$_POST[date]', '$_POST[time]', '$_POST[people]', '$_POST[email]', '$_POST[phonen]', '$_POST[comments]')";
-  mysqli_query($conn, $sql);
-}
-
+        // collect value of input field
+        $data = $_REQUEST['val1'];
+    
+        if (empty($data)) {
+            echo "data is empty";
+        } else {
+            echo $data;
+        }
+    }
+    
+    // Closing the connection.
+    $conn->close();
+?>

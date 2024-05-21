@@ -1,4 +1,4 @@
--- Active: 1714510832799@@127.0.0.1@3306@booking
+
 <meta charset="UTF-8">
 
 <link rel="stylesheet" href="./assets/style.css">
@@ -22,8 +22,8 @@
   
     <!-- Overlay content -->
     <div class="overlay-content">
-      <a href="#index.html" >Menu</a>
-      <a href="#booking.html" target="_blank">Bookings</a>
+      <a href="/index.html" >Menu</a>
+      <a href="http://localhost/bookings/booking.html" target="_blank">Bookings</a>
       <a href="#contact.html" target="_blank">Contact</a>
     </div>
   </div>
@@ -38,13 +38,13 @@
 
 <!--FORM-->
 
-<form action="/dbconnect.php" method="POST" name="form">
+<form action="./insert.php" method="POST" name="form">
     <div class="">
         <div class="contact-details">
-          <input type="text" class="form-options" placeholder="First Name" aria-label="firstName" name="firstN">
+          <input type="text" class="form-options" placeholder="First Name" aria-label="firstName" name="firstn" required>
         </div>
         <div class="lastn">
-          <input type="text" class="form-options" placeholder="Last Name" aria-label="LastName" name="LastN">
+          <input type="text" class="form-options" placeholder="Last Name" aria-label="LastName" name="lastn" required>
         </div>
       </div>
        
@@ -54,7 +54,7 @@
     <input type="date" class="date-input" name="date">
 
     <h1>Time</h1>
-    <select class="form-options" aria-label="Default select example" name="time">
+    <select class="form-options" aria-label="Default select example" name="time" required>
  
   <option value="1">15:00</option>
   <option value="2">16:00</option>
@@ -65,7 +65,7 @@
 </select>
 
    <h1>People</h1>
-          <select class="form-options" aria-label="Default select example" name="people">
+          <select class="form-options" aria-label="Default select example" name="people" required>
        
         <option value="1">1 person</option>
         <option value="2">2 perons</option>
@@ -77,11 +77,11 @@
     <div class="contact-details">
       <h1>Email</h1>
         <div class="email-input">
-          <input type="E-mail" class="form options" placeholder="john.doe@gmail.com" aria-label="email" name="email">
+          <input type="E-mail" class="form options" placeholder="john.doe@gmail.com" aria-label="email" name="email" required>
         </div>
         <div class="number-input">
           <h1>Phone number</h1>
-          <input type="text" class="form-options" placeholder="+44 010101023" aria-label="Phone number" name="phonen">
+          <input type="text" class="form-options" placeholder="+44 010101023" aria-label="Phone number" name="phonen" required>
         </div>
       </div>
 
@@ -89,10 +89,10 @@
         Additional inquiries
       </textarea>
 
-    <button class="btn-primary" type="submit" value="submit">Submit form</button>
+    <button class="btn-primary" type="submit" name="submit" value="submit">Submit form</button>
     </form>
 
-     <script src="/assets/js/index.js"></script>
+     <script src="./assets/js/index.js"></script>
 
 </body>
 </html>
