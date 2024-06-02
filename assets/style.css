@@ -357,11 +357,23 @@ body {
 .fa-facebook {
   background: #3B5998;
   color: white;
+  border-radius: 10px;
 }
 
 /* Twitter */
 .fa-twitter {
   background: #55ACEE;
   color: white;
+  border-radius: 10px;
+}
+
+.fa-instagram {
+  background: #d31212;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
 }
 /* social links - end */
+
+.price-tag {
+  color: #454e57;
+}
