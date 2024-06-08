@@ -284,24 +284,18 @@ body {
   MARGIN: 0.5rem;
 }
 
-
-
-
   .map-responsive {
     overflow: hidden;
     padding-bottom: 56.25%; /* Ratio for 16:9 aspect ratio */
-    position: relative;
     height: 0;
-}
-.map-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 500px;
-    width: 600px;
-    position: absolute;
-    padding-left: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    max-height: 500px;
+    max-width: 500px;
+    width: 100%;
     border-radius: 8px;
 }
+
 
 .location,
 .contact,
@@ -318,9 +312,12 @@ body {
 
 .contact-us {
   background-color: #ffffff;
-  max-width: 700px;
+  max-width: 500px;
+  HEIGHT: 275PX;
   margin: 2rem;
   border-radius: 8px;
+  padding: 2.5REM;
+  padding-top: 1.4rem;
 }
 
 .menu-header {
@@ -336,17 +333,23 @@ body {
   font-family: "Seymour One", sans-serif;
   font-weight: 700;
   font-size: 2rem;
+  padding-top: 2rem;
+  position: relative;
+  right: 0.5rem;
 }
 /* social links - start  */
 
 
 /* Style all font awesome icons */
 .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 60px;
+  padding: 17px;
+  font-size: 17px;
+  width: 20px;
   text-align: center;
   text-decoration: none;
+  display:inline;
+  justify-content: center;
+
 }
 
 .fa:hover {
@@ -377,3 +380,74 @@ body {
 .price-tag {
   color: #454e57;
 }
+
+.contact-section {
+  margin-top: 1rem;
+}
+
+.contact-page {
+  background-color: #f0ddcb;
+}
+
+.social-links {
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  background-color: #ffffff;
+}
+
+.follow-us {
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+  font-size: 2rem;
+  color: #ce731d;
+}
+
+/* form-inputs */
+
+.number-people,
+.phone-number,
+.time,
+.date-input,
+.name-input,
+.lastn-input
+{
+ 
+  margin: 1.5rem;
+  margin-top: 0.5rem;
+  border-color: white;
+  border-radius: 8px;
+  width: 300px;
+  padding: 0.5rem;
+}
+
+.emails {
+  border-color: white;
+  border-radius: 8px;
+  width: 300px;
+  margin: -0.5rem;
+  padding: 0.5rem;
+}
+
+.comments-sct {
+  width: 300px;
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+  border-color: white;
+  border-radius: 8px;
+}
+
+. {
+  border-color: white;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.booking-heading-sct {
+  background-color: #9cb399;
+  margin: 2rem;
+  padding: 0.3rem;
+  border-radius: 8px;
+  border-color: #e7f1e8;
+  border-style: solid;
+}
+/* form-inputs */

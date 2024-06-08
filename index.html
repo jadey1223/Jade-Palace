@@ -23,7 +23,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Anton&family=Indie+Flower&family=Nunito&family=Roboto+Condensed&family=Shadows+Into+Light&display=swap"
     rel="stylesheet">
-
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+   
+  <link rel="stylesheet" href="./custom.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Angkor&family=Lobster&family=Oswald:wght@200..700&family=Rowdies:wght@300;400;700&display=swap"
     rel="stylesheet">
@@ -51,7 +53,7 @@
     <!-- Overlay content -->
     <div class="overlay-content">
       <a href="#index.html">Menu</a>
-      <a href="http://localhost/bookings/booking.html" target="_blank">Bookings</a>`
+      <a href="#login.html" target="_blank">Bookings</a>`
       <a href="#contact.html" target="_blank">Contact</a>
     </div>
   </div>
@@ -63,14 +65,14 @@
   </div>
   <!--Menu items-->
   <div class="container">
-    <img src="./assets/images/north-indian-cuisine.jpg" class="header-img">
+    <img src="./assets/images/north-indian-cuisine.jpg" class="header-img" alt="indian-spices">
     <div class="text-wrapper">
       <h1 class="text-wrapper-hder">Indian Cuisine</h1>
       <p> We welcome our diners with a symphony of spices. This intimate restaurant specializes in North Indian cuisine,
         offering a menu that spans from succulent kebabs to aromatic biryanis. Each dish is a celebration of flavor,
         crafted to transport you to the bustling streets of Delhi.</p>
     </div>
-    <img src="./assets/images/spices.webp" class="spice-img">
+    <img src="./assets/images/spices.webp" class="spice-img" alt="indian-spices">
 
   </div>
  
@@ -214,8 +216,8 @@
             </div>
           </div>
         </div>
+        
         <div class="accordion-item">
-
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
@@ -262,7 +264,7 @@
               </div>
             </div>
           </div>
-
+           
           <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -308,49 +310,48 @@
                     </p>
                 </div>
             </div>
-        </div>
+    
         
 
   </section>
 
   </br>
-
-  <h1 class="contact-header">CONTACT US</h1>
+  <div class="contact-page">
+          <div class="contact-section">
+           <h1 class="contact-header">CONTACT US</h1>
 
   <div class="contact-us">
 
     <div class="location">
-      <img src="./assets/images/map (1).png">
+      <img src="./assets/images/map (1).png" alt="map-icon">
       <h5 class="address">21B Rannoch Rd, Perth PH1 2DP</h5>
     </div>
 
     <div class="contact">
-      <img src="./assets/images/phone-call.png">
+      <img src="./assets/images/phone-call.png" alt="phone-symbol">
       <h5 class="phonenumber">+4475980907</h5>
     </div>
 
     <div class="email">
-      <img src="./assets/images/communications.png">
+      <img src="./assets/images/communications.png" alt="email-icon">
       <h5 class="email-address">Jade-Palace@gmail.com</h5>
     </div>
 
-  </div>
+  </div></div>
 
   <div class="map-responsive">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8832.245751183693!2d-3.4937264246660447!3d56.39776386098948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488624b544b68095%3A0xecc60da008885050!2sBilal%20Palace!5e0!3m2!1sen!2suk!4v1716322071009!5m2!1sen!2suk"
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8832.245751183693!2d-3.4937264246660447!3d56.39776386098948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488624b544b68095%3A0xecc60da008885050!2sBilal%20Palace!5e0!3m2!1sen!2suk!4v1716322071009!5m2!1sen!2suk"
       width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 
- <div class="g-signin2" data-onsuccess="onSignIn"></div>
-  <a href="#" onclick="signOut();">Sign out</a>
-  <div id="g_id_onload" data-client_id="444189995200-3r9lni89ot0e7nchd82bhecnv2mftnlf.apps.googleusercontent.com"
-    data-login_uri="http://127.0.0.1:3000/index.html" data-your_own_param_1_to_login="any_value"
-    data-your_own_param_2_to_login="any_value">
-
-    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+    <div class="social-links">
+      <h5 class="follow-us">Follow Us!</h5>
+    <a href="https://www.facebook.com/" class="fa fa-facebook" ></a>
     <a href="https://x.com/?lang=en-gb" class="fa fa-twitter"></a>
     <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-</body>
 
+  </div>
+  </div>
+</div>
+</body>
 </html>
