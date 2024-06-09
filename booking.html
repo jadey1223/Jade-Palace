@@ -43,18 +43,18 @@
   
     <!-- Overlay content -->
     <div class="overlay-content">
-      <a href="/index.html" >Menu</a>
-      <a href="http://localhost/bookings/booking.html" target="_blank">Bookings</a>
+      <a href="./index.html" >Menu</a>
+      <a href="" target="_blank">Bookings</a>
       <a href="#contact.html" target="_blank">Contact</a>
     </div>
   </div>
   
-      <div class="heading-sct">
+     
     
       <h1 class="title">Jade Palace</h1>  
       <span class="hamburger-icn"   onclick="openNav()">&#9776;</span>
-  </div> 
-
+  
+ <div class="booking-heading-sct">
  <h1 class="booking-title"> Bookings</h1>
 
 <!--FORM-->
@@ -62,51 +62,51 @@
 <form action="./insert.php" method="POST" name="form">
     <div class="">
         <div class="contact-details">
-          <input type="text" class="form-options" placeholder="First Name" aria-label="firstName" name="firstn" required>
+          <input type="text" class="name-input" placeholder="First Name" aria-label="firstName" name="firstn" required>
         </div>
         <div class="lastn">
-          <input type="text" class="form-options" placeholder="Last Name" aria-label="LastName" name="lastn" required>
+          <input type="text" class="lastn-input" placeholder="Last Name" aria-label="LastName" name="lastn" required>
         </div>
       </div>
        
    
       <br> 
    <h1>Date</h1>
-    <input type="date" class="date-input" name="date">
+    <input  type="date" class="date-input" name="date" required>
 
     <h1>Time</h1>
-    <select class="form-options" aria-label="Default select example" name="time" required>
+    <select class="time" aria-label="Default select example" name="time" required>
  
   <option value="1">15:00</option>
   <option value="2">16:00</option>
   <option value="3">17:00</option>
-  <option value="3">18:00</option>
-  <option value="3">19:00</option>
-  <option value="3">20:00</option>
+  <option value="4">18:00</option>
+  <option value="5">19:00</option>
+  <option value="6">20:00</option>
 </select>
 
    <h1>People</h1>
-          <select class="form-options" aria-label="Default select example" name="people" required>
+          <select class="number-people" aria-label="Default select example" name="people" required>
        
         <option value="1">1 person</option>
         <option value="2">2 perons</option>
         <option value="3">3 persons</option>
-        <option value="3">4 person</option>
-        <option value="3">5 persons</option>
-        <option value="3">6 persons</option>
+        <option value="4">4 person</option>
+        <option value="5">5 persons</option>
+        <option value="6">6 persons</option>
       </select>   
     <div class="contact-details">
       <h1>Email</h1>
         <div class="email-input">
-          <input type="E-mail" class="form options" placeholder="john.doe@gmail.com" aria-label="email" name="email" required>
+          <input type="E-mail" class="emails" placeholder="john.doe@gmail.com" aria-label="email" name="email" required>
         </div>
         <div class="number-input">
           <h1>Phone number</h1>
-          <input type="text" class="form-options" placeholder="+44 010101023" aria-label="Phone number" name="phonen" required>
+          <input type="text" class="phone-number" placeholder="+44 010101023" aria-label="Phone number" name="phonen" required>
         </div>
       </div>
 
-      <textarea name="message" rows="10" cols="40" class="comment-sct" name="comments">
+      <textarea name="message" rows="10" cols="40" class="comments-sct" name="comments">
         Additional inquiries
       </textarea>
 
@@ -114,6 +114,6 @@
     </form>
 
      <script src="./assets/js/index.js"></script>
-
+</div> 
 </body>
 </html>

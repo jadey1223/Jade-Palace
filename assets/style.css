@@ -212,7 +212,8 @@ body {
   }
 
   .booking-title {
-    margin-top: 3rem;
+    margin-top: 2rem;
+    color: #ffffff;
   }
   
   .heading-sct{
@@ -436,18 +437,14 @@ body {
   border-radius: 8px;
 }
 
-. {
-  border-color: white;
-  border-radius: 8px;
-  width: 300px;
-}
 
 .booking-heading-sct {
   background-color: #9cb399;
   margin: 2rem;
   padding: 0.3rem;
   border-radius: 8px;
-  border-color: #e7f1e8;
+  border-color: #719774;
   border-style: solid;
+  max-width: 700px;
 }
 /* form-inputs */
