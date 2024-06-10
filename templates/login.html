@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- link attribute start -->
   <link rel="stylesheet" href="./assets/style.css">
@@ -58,12 +59,49 @@
   
 
 <body>
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-
- <div class="g-signin2" data-onsuccess="onSignIn"></div>
-  <a href="#" onclick="signOut();">Sign out</a>
-  <div id="g_id_onload" data-client_id="444189995200-3r9lni89ot0e7nchd82bhecnv2mftnlf.apps.googleusercontent.com"
-    data-login_uri="http://127.0.0.1:3000/index.html" data-your_own_param_1_to_login="any_value"
-    data-your_own_param_2_to_login="any_value">
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+           
+       <nav>
+           <div class="nav-wrapper">
+             <a href="#" class="brand-logo">Django-Allauth</a>
+           </div>
+         </nav>
+       <h3>Welcome Home</h3>
+       <div class="row">
+           <div class="col s12 m6">
+             <div class="card whitedarken-1">
+               <div class="card-content blue-text">
+                 <span class="card-title">Lorem Ipsum</span>
+                 <p>{% lorem 1 p %}</p>
+               </div>
+             </div>
+           </div>  
+           <div class="col s12 m6">
+             <div class="card white darken-1">
+               <div class="card-content blue'-text">
+                 <span class="card-title">Lorem Ipsum</span>
+                 <p>{% lorem 1 p %}</p>
+               </div>
+             </div>
+           </div>          
+         </div>
+         <div class="container text-dark mt-5">
+           <div class="row justify-content-md-center">
+             <div class="col md-5 p-3">
+               {% if user.is_authenticated%}
+               <p>Welcome, {{user.username}}</p>
+               <a href="http://127.0.0.1:8000/accounts/logout/">Logout</a>
+               {%else%}
+               <p>Please <a href="http://127.0.0.1:8000/accounts/login/">Login</a></p>
+               {%endif%}
+             </div>
+           </div>
+         </div>
+  
 </body>
 </html>
+
