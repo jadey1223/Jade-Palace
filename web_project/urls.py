@@ -22,6 +22,7 @@ from form import views
 urlpatterns = [
      path("admin/", admin.site.urls),
      path('', include('form.urls')),
+     path('accounts/', include('allauth.urls')),
      
     #  path('',views.login)
 ] 
