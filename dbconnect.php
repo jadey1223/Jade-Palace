@@ -15,7 +15,7 @@ if(isset($_POST['submit']))
     $host = "127.0.0.1";
     $username = "root";
     $password = "";
-    $dbname = "mysql";
+    $dbname = "booking'";
    
     // creating a connection
     $con = mysqli_connect($host, $username, $password, $dbname);

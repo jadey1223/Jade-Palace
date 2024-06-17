@@ -3,7 +3,7 @@
 $host = "localhost";
 $username = "root";
 $password = "";
-$dbname = "bookings";
+$dbname = "booking";
 
 // Create a connection
 $conn = new mysqli($host, $username, $password, $dbname); // Corrected variable name from $servername to $host
