@@ -14,7 +14,8 @@
     "passport-google-oauth2": "^0.2.0",
     "passport-google-oauth20": "^2.0.0",
     "prompt-sync": "^4.2.0",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "monolog": "2.0.*"
   },
   "name": "jade-palace",
   "description": "![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)",
