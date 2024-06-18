@@ -1,3 +1,4 @@
 
 web: python manage.py runserver %PORT%
 web: gunicorn web_project.wsgi
+web: heroku-php-apache2
